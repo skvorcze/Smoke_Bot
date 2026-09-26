@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#0a120a"/>
+  <rect x="0" y="0" width="640" height="360" fill="none" stroke="#8cb478" stroke-opacity="0.15" stroke-width="2"/>
+  <text x="50%" y="52%" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#c8e08c" opacity="0.7">Project Three</text>
+</svg>

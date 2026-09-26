@@ -1,0 +1,106 @@
+@import '@fontsource/inter/300.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/playfair-display/400.css';
+@import '@fontsource/playfair-display/400-italic.css';
+@import '@fontsource/playfair-display/600.css';
+
+:root {
+  --color-heading: #f8fcf0;
+  --color-accent: #e6f578;
+  --color-body: #d7e6be;
+  --color-label: #d2e6a0;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: #000;
+  overflow-x: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #e8ece4;
+}
+
+html {
+  scroll-snap-type: y proximity;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: rgba(230, 245, 120, 0.6);
+  z-index: 200;
+  width: 0;
+  transition: width 0.1s linear;
+}
+
+.revealed {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.delay-1 { transition-delay: 0.1s !important; }
+.delay-2 { transition-delay: 0.25s !important; }
+.delay-3 { transition-delay: 0.4s !important; }
+.delay-4 { transition-delay: 0.55s !important; }
+
+.webgpu-fallback-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(74, 122, 20, 0.25), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(212, 184, 56, 0.15), transparent 50%),
+    #000;
+}
+
+.webgpu-notice {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  max-width: 480px;
+  z-index: 250;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: rgba(10, 18, 10, 0.85);
+  border: 1px solid rgba(140, 180, 120, 0.2);
+  color: var(--color-body);
+  font-size: 12px;
+  line-height: 1.6;
+  backdrop-filter: blur(12px);
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.webgpu-notice button {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

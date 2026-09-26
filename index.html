@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>SKVORCZE — Portfolio</title>
+  <meta name="description" content="SKVORCZE — design & creative portfolio. Ideas, cultivated." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav class="nav-float" id="navFloat">
+    <div class="nav-logo" data-i18n="nav.logo">SKVORCZE</div>
+    <div class="nav-links">
+      <a href="javascript:void(0)" data-nav="1" data-i18n="nav.about">About</a>
+      <a href="javascript:void(0)" data-nav="2" data-i18n="nav.approach">Approach</a>
+      <a href="javascript:void(0)" data-nav="3" data-i18n="nav.projects">Projects</a>
+      <a href="javascript:void(0)" data-nav="6" data-i18n="nav.contact">Contact</a>
+      <button class="lang-toggle" id="langToggle" type="button">RU</button>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile-overlay" id="navMobileOverlay">
+    <a href="javascript:void(0)" data-nav-mobile="1" data-i18n="nav.about">About</a>
+    <a href="javascript:void(0)" data-nav-mobile="2" data-i18n="nav.approach">Approach</a>
+    <a href="javascript:void(0)" data-nav-mobile="3" data-i18n="nav.projects">Projects</a>
+    <a href="javascript:void(0)" data-nav-mobile="6" data-i18n="nav.contact">Contact</a>
+  </div>
+
+  <button class="settings-gear" id="settingsGear" aria-label="Settings">
+    <svg viewBox="0 0 24 24"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+  </button>
+  <div class="settings-panel" id="settingsPanel"></div>
+
+  <div id="scroll-container">
+    <section class="section hero" id="heroSection" data-stage="0">
+      <span class="hero-tag" data-reveal data-delay="1" data-i18n="hero.tag">Design & Creative Practice</span>
+      <h1 data-reveal data-delay="2" data-i18n="hero.title">Ideas,<br><em>cultivated</em>.</h1>
+      <p class="hero-sub" data-reveal data-delay="3" data-i18n="hero.sub">A field that grows the way a practice does.</p>
+      <div class="scroll-hint" data-reveal data-delay="4">
+        <span data-i18n="hero.scrollHint">Explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="section manifesto" data-stage="1">
+      <span class="manifesto-label" data-reveal data-i18n="manifesto.label">About Me</span>
+      <h2 data-reveal data-delay="1" data-i18n="manifesto.heading">I grow ideas the way this field grows grass.</h2>
+    </section>
+
+    <section class="section pillars" data-stage="2">
+      <div class="pillars-header" data-reveal>
+        <span data-i18n="pillars.label">How I Work</span>
+      </div>
+      <div class="pillar-grid" id="pillarGrid">
+        <div class="pillar-card" data-reveal data-delay="1">
+          <div class="pillar-num">01</div>
+          <h3 data-i18n="pillars.cards.0.title">Cultivate</h3>
+          <p data-i18n="pillars.cards.0.desc">Every project starts as a seed of a problem worth solving.</p>
+        </div>
+        <div class="pillar-card" data-reveal data-delay="2">
+          <div class="pillar-num">02</div>
+          <h3 data-i18n="pillars.cards.1.title">Craft</h3>
+          <p data-i18n="pillars.cards.1.desc">Discipline and iteration, not just aesthetics.</p>
+        </div>
+        <div class="pillar-card" data-reveal data-delay="3">
+          <div class="pillar-num">03</div>
+          <h3 data-i18n="pillars.cards.2.title">Grow</h3>
+          <p data-i18n="pillars.cards.2.desc">Let's build something together.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" data-stage="3">
+      <div class="projects-header" data-reveal>
+        <span data-i18n="projects.label">Selected Work</span>
+        <h2 data-i18n="projects.heading">Case studies, in progress</h2>
+        <p data-i18n="projects.sub">Real project write-ups are coming soon.</p>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <section class="section quote-section" data-stage="4">
+      <blockquote data-reveal data-i18n="quote.text">"Good work is grown, not manufactured."</blockquote>
+      <span class="quote-attr" data-reveal data-delay="1" data-i18n="quote.attr">— SKVORCZE</span>
+    </section>
+
+    <section class="section cta-section" data-stage="5">
+      <h2 data-reveal data-i18n="cta.heading">Let's grow<br>something <em>together</em></h2>
+      <p class="cta-sub" data-reveal data-delay="1" data-i18n="cta.sub">Open for freelance work and new collaborations.</p>
+      <a href="javascript:void(0)" class="cta-btn" data-reveal data-delay="2" data-nav="6" data-i18n="cta.button">Get in touch →</a>
+    </section>
+
+    <section class="section footer-spacer" data-stage="6"></section>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="sf-brand">
+        <div class="sf-brand-name">SKVORCZE</div>
+        <p class="sf-brand-desc" data-i18n="footer.brandDesc">Design & creative practice.</p>
+      </div>
+      <div class="sf-col">
+        <div class="sf-col-title" data-i18n="footer.exploreTitle">Explore</div>
+        <a href="javascript:void(0)" data-nav="1" data-i18n="footer.linkAbout">About</a>
+        <a href="javascript:void(0)" data-nav="2" data-i18n="footer.linkApproach">Approach</a>
+        <a href="javascript:void(0)" data-nav="3" data-i18n="footer.linkProjects">Projects</a>
+        <a href="javascript:void(0)" data-nav="6" data-i18n="footer.linkContact">Contact</a>
+      </div>
+      <div class="sf-col">
+        <div class="sf-col-title" data-i18n="footer.connectTitle">Connect</div>
+        <a href="#" id="telegramLink" target="_blank" rel="noopener" data-i18n="footer.linkTelegram">Telegram</a>
+        <a href="#" id="resumeLink" download data-i18n="footer.linkResume">Download CV</a>
+      </div>
+      <div class="sf-col">
+        <div class="sf-col-title" data-i18n="footer.formTitle">Say hello</div>
+        <form class="sf-form" id="contactForm">
+          <input type="text" name="name" data-i18n-attr="placeholder:footer.formName" placeholder="Name" autocomplete="name" required />
+          <input type="email" name="email" data-i18n-attr="placeholder:footer.formEmail" placeholder="Email" autocomplete="email" required />
+          <textarea name="message" data-i18n-attr="placeholder:footer.formMessage" placeholder="Message" required></textarea>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+          <button type="submit" data-i18n="footer.formSend">Send message</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+    <div class="sf-bottom">
+      <span class="sf-copy" data-i18n="footer.copyright">© 2026 SKVORCZE. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

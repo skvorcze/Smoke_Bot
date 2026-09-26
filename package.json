@@ -1,0 +1,19 @@
+{
+  "name": "skvorcze-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.1.0",
+    "@fontsource/playfair-display": "^5.1.0",
+    "three": "0.183.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

@@ -1,0 +1,69 @@
+.sf-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 320px;
+}
+
+.sf-form input,
+.sf-form textarea {
+  width: 100%;
+  background: rgba(10, 18, 10, 0.5);
+  border: 1px solid rgba(140, 180, 120, 0.18);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 13px;
+  color: var(--color-heading);
+  transition: border-color 0.3s;
+}
+
+.sf-form input::placeholder,
+.sf-form textarea::placeholder {
+  color: rgba(215, 230, 190, 0.35);
+}
+
+.sf-form input:focus,
+.sf-form textarea:focus {
+  outline: none;
+  border-color: rgba(180, 210, 140, 0.5);
+}
+
+.sf-form textarea {
+  min-height: 84px;
+  resize: vertical;
+}
+
+.sf-form button[type='submit'] {
+  align-self: flex-start;
+  padding: 10px 24px;
+  border: 1px solid rgba(180, 210, 140, 0.35);
+  border-radius: 32px;
+  background: rgba(30, 50, 30, 0.4);
+  color: var(--color-accent);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.sf-form button[type='submit']:hover:not(:disabled) {
+  background: rgba(50, 80, 50, 0.5);
+  border-color: rgba(180, 210, 140, 0.6);
+}
+
+.sf-form button[type='submit']:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.form-status {
+  font-size: 12px;
+  line-height: 1.6;
+  min-height: 1em;
+}
+
+.form-status.error { color: #f19a9a; }
+.form-status.success { color: #b6e08a; }
