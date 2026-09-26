@@ -2,6 +2,8 @@
 // supplies project text/images/links. `placeholder: true` renders a
 // "coming soon" badge instead of a live link; drop that flag once real
 // content is in.
+const BASE = import.meta.env.BASE_URL;
+
 export const projects = [
   {
     id: 'placeholder-1',
@@ -11,7 +13,7 @@ export const projects = [
       en: 'A short one-line summary of this project will go here.',
       ru: 'Здесь появится краткое описание проекта в одну строку.',
     },
-    image: '/placeholder-project-1.svg',
+    image: `${BASE}placeholder-project-1.svg`,
     tags: ['Branding', 'UI'],
     link: null,
     year: null,
@@ -24,7 +26,7 @@ export const projects = [
       en: 'A short one-line summary of this project will go here.',
       ru: 'Здесь появится краткое описание проекта в одну строку.',
     },
-    image: '/placeholder-project-2.svg',
+    image: `${BASE}placeholder-project-2.svg`,
     tags: ['Web Design'],
     link: null,
     year: null,
@@ -37,7 +39,7 @@ export const projects = [
       en: 'A short one-line summary of this project will go here.',
       ru: 'Здесь появится краткое описание проекта в одну строку.',
     },
-    image: '/placeholder-project-3.svg',
+    image: `${BASE}placeholder-project-3.svg`,
     tags: ['Illustration', 'Art Direction'],
     link: null,
     year: null,

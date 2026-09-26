@@ -7,4 +7,4 @@ export const FORMSPREE_FORM_ID = 'REPLACE_ME';
 
 export const TELEGRAM_URL = 'https://t.me/REPLACE_ME';
 
-export const RESUME_URL = '/resume.pdf';
+export const RESUME_URL = `${import.meta.env.BASE_URL}resume.pdf`;
